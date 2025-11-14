@@ -1,0 +1,13 @@
+               : : : : : T-REX RUNNER : : : : : 
+
+-> Copyright (c) 2014 The Chromium Authors. All rights reserved.
+
+-> Extracted from chromium source code by @liuwayong.
+
+
+
+***** FOR MORE PROJECTS :- https://code-projects.org/ *****
+
+
+
+#THANK YOU FOR DOWNLOADING

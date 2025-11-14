@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#2f2f2f; 
+font-family: 'Poppins', sans-serif;
+}
+
+.board{
+height:400px;   
+width:300px;
+background:#2f2f2f;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+display:grid;
+grid-template-columns:repeat(3, 1fr);
+grid-template-rows:repeat(3, 1fr);
+}
+
+.cell{
+border-bottom:1px solid white;
+border-right:1px solid white;
+color:white;
+font-size:40px;
+text-align:center;
+line-height:100px;
+cursor:pointer;
+}
+
+.cell:nth-child(3n){
+border-right:none;        
+}
+
+.cell:nth-child(n+7) {
+border-bottom:none;
+}
+
+.title{
+color:white; 
+position:absolute;
+top:10%;
+left:50%;
+transform:translate(-50%, -50%);
+white-space:nowrap;
+}
+
+.message{
+color:white; 
+position:absolute;
+top:90%;
+left:50%;
+transform:translate(-50%, -50%);
+white-space:nowrap;
+}
+
+.restart{
+all:unset; 
+color:black;
+background:white;
+padding:5px;
+text-align:center;
+width:80px;
+border-radius:3px;
+position:absolute;
+top:85%;
+left:50%;
+transform:translate(-50%, -50%);
+cursor:pointer;
+}
+
+::selection{
+background:white;   
+color:black;
+}

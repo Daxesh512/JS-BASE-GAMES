@@ -1,0 +1,39 @@
+<!--Javascriptpro_-->
+<!--Dont forget to follow me on github,codepen and instagram.-->
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+        <link rel="stylesheet" href="Game.css">
+        <title></title>
+        
+</head>
+
+<body>
+<div class="container">
+<span class="my_score">You: <span><strong>0</strong></span></span>  
+<span class="computer_score">Computer: <span><strong>0</strong></span></span>   
+
+<div class="snake" onclick="check('snake')">
+<img src="snake.png" alt="">
+</div>
+
+<div class="water" onclick="check('water')">
+ <i class="fa-solid fa-droplet"></i>
+</div>
+
+<div class="gun" onclick="check('gun')">
+ <i class="fa-solid fa-gun"></i>
+</div>
+
+<span class="your_choice">You Choose <strong>Snake</strong> </span>
+<span class="computer_choice">Computer Choose <strong>Water</strong></span>
+<span class="match-result">YOU WIN!</span>
+</div>
+<script src="Game.js"></script>
+</body>
+
+</html>

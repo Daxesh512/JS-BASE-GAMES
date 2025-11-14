@@ -1,0 +1,155 @@
+/*javascriptpro_*/
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins&family=Roboto:wght@300&display=swap');
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+} 
+
+body{
+background:#9370DB;        
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+padding:20px 20px 35px 20px;
+width:350px;
+background:white;
+border-radius:7px;
+overflow:hidden;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.container .app-title{
+height:50px;   
+width:100%;
+background:white;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-top-left-radius:7px;
+border-top-right-radius:7px;
+position:absolute;
+top:0;
+left:0;
+display:flex;
+align-items:center;
+padding-left:20px;
+font-size:14px
+}
+
+.container .app-title .time-box{
+ height:30px;   
+ width:90px;
+background:#e7f6d5;
+color:#689f38;
+border:1px solid #689f38;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:5px;
+position:absolute;
+right:20px;
+}
+
+.container .guess-word{
+text-align:center;
+margin-top:90px;
+letter-spacing:8px;
+text-transform:uppercase;
+}
+
+.container .userInput{
+all:unset; 
+height:40px;
+width:292px;
+border:1px solid grey;
+padding-left:15px;
+border-radius:3px;
+margin-top:50px;
+}
+
+.container .userInput.shake{
+animation:shake .2s ease-in-out; 
+border:1px solid red;
+}
+
+@keyframes shake{
+0%{
+transform:translate(0px);        
+}20%{
+transform:translateX(-13px);        
+} 
+40%{
+transform:translateX(13px);        
+}
+60%{
+transform:translateX(-8px);        
+}
+80%{
+transform:translateX(8px);        
+}
+}
+
+.container button{
+all:unset;  
+height:45px;
+width:145px;
+border-radius:3px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#9370DB;
+color:white;
+float:left;
+margin-left:10px;
+margin-top:10px;
+cursor:pointer;
+}
+
+.container .refresh-btn{
+ position:relative;  
+ left:-10px;
+}
+
+.game-over{
+padding:20px;  
+width:350px;
+background:white;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:7px;
+display:none;
+}
+
+.game-over h3{
+white-space:nowrap;
+font-size:16px;
+text-align:center;
+margin-top:6px;
+}
+
+.game-over button{
+all:unset; 
+height:40px;
+width:150px;
+text-transform:capitalize;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#9370DB;        
+margin:auto;
+margin-top:15px;
+border-radius:3px;
+font-size:12px;
+cursor:pointer;
+}
+
+::selection{
+background:rgb(100, 149, 237,0.8); 
+color:white;
+}
